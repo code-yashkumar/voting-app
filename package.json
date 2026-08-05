@@ -1,0 +1,31 @@
+{
+  "name": "voting_app",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/code-yashkumar/voting-app#readme",
+  "bugs": {
+    "url": "https://github.com/code-yashkumar/voting-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-yashkumar/voting-app.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "backend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "lodash": "^4.18.1",
+    "mongoose": "^9.6.3",
+    "nodemon": "^3.1.14",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}
