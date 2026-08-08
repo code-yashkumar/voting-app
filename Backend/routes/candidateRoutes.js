@@ -3,7 +3,6 @@ const router = express.Router();
 import User from "../models/User.js";
 import Candidate from "../models/Candidate.js";
 import { jwtAuthMiddleware } from "../jwt.js";
- 
 
 //check admin role
 const checkAdminRole=async (userId)=>{
@@ -16,6 +15,7 @@ const checkAdminRole=async (userId)=>{
 }    
 
 //post route to add a new candidate
+// http://localhost:3000/Candidate
 router.post('/', jwtAuthMiddleware,async (req, res) => {
     try {
         if (!(await checkAdminRole(req.user.id))) {
